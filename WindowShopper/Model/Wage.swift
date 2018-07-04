@@ -9,7 +9,7 @@
 import Foundation
 
 class Wage {
-    //class function no object needed to use function
+    //Class function no object needed to use function
     class func calcHours(wage: Double, price: Double) -> Int{
         return Int(ceil(price / wage))
     }
