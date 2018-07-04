@@ -10,6 +10,14 @@ import XCTest
 
 class WindowShopperTests: XCTestCase {
     
+    //Test to check the math calculation
+    func testGetHours(){
+        //Check to make sure it rounds up to next hour if decimal
+        XCTAssert(Wage.calcHours(wage: 15.50, price: 250.3) == 17)
+        //Check to make sure it returns correct calculation
+        XCTAssert(Wage.calcHours(wage: 25, price: 100) == 4)
+    }
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
